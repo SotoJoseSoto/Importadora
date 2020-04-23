@@ -1,89 +1,159 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Importadora DJGH</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Importadora DJGH</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- comentemos los de la web 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- comentemos los de la web 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  -->
 
-  </head>
-  <body>
-    <div class="container-fluid">
-        <!--  carrucel -->
-        <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel"> 
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/importadora_portada_1.png" class="d-block h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/importadora_portada_1.png" class="d-block h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/importadora_portada_1.png" class="d-block h-100" alt="...">
-            </div>
-          </div>
+  <style type="text/css">
+    div .portada01{
+      background: url(img/importadora_portada_1.png);
+      background-repeat: repeat;
+      background-attachment: fixed;  
+      height: 80vh;   
+    }
+    div .carousel-inner{
+      position: 0 0;
+    }
+    .secTam{
+      
+      min-height: 95vh;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <!-- ---------- titulo ---------- -->
+  <div class="row portada01">
+
+  </div>
+    <!-- ---------- carrucel ---------- 
+    <div id="carousel-presentacion" class="carousel slide position-absolute" data-ride="carousel"> 
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/importadora_portada_1.png" class="d-block h-100" alt="...">
         </div>
-
-
-      <div class="container">
-        <div class="row">
-        <h1>Importadora de Equipos Medicos</h1>
-        <h2>Dr. Jose Gregorio Hernandez</h2>
-        <!--img src="img/importadora_portada_1.png" class="img-fluid" alt="banner ilustrativo"-->
+        <div class="carousel-item">
+          <img src="img/importadora_portada_1.png" class="d-block h-100" alt="...">
         </div>
-
-
-        <!--  cita del dr JGH -->
-        <div class="row justify-content-end">
-          <blockquote class="blockquote text-right end">
-            <p class="mb-0">Un hombre auténtico tiene como ideal moral hacer el bien.</p>
-            <footer class="blockquote-footer">Dr. José Gregorio Hernández</footer>
-          </blockquote>
-        </div>
-
-        <!--  Productos -->
-        <div class="row">
-          <h3>Productos</h3>
-        </div>
-
-        <!--  Quienes Somos -->
-        <div class="row">
-          <h3>Quienes Somos</h3>
-        </div>
-
-        <!--  Servicios -->
-        <div class="row">
-          <h3>Servicios</h3>
-        </div>
-
-        <!--  Donde contactarnos -->
-        <div class="row">
-          <h3>Contactanos</h3>
+        <div class="carousel-item">
+          <img src="img/importadora_portada_1.png" class="d-block h-100" alt="...">
         </div>
       </div>
     </div>
+-->
+
+  <!-- ---------- barra de navegacion ---------- -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top row">
+    <div class="container">
+    <a class="navbar-brand" href="#">Importadora DJGH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a data-scroll class="nav-item nav-link" href="#productos1">Productos</a>
+        <a data-scroll class="nav-item nav-link" href="#somos">Quienes Somos</a>
+        <a data-scroll class="nav-item nav-link" href="#contactos">Contactos</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="row ">
+
+    <div class="container">
+      <h1>Importadora de Equipos Medicos</h1>
+      <p>Dr. Jose Gregorio Hernandez</p>
+      <!--img src="img/importadora_portada_1.png" class="img-fluid" alt="banner ilustrativo"-->
+    </div>
+
+    <!--  cita del dr JGH -->
+    <div class="container justify-content-end">
+      <blockquote class="blockquote text-right end">
+        <p class="mb-0">Un hombre auténtico tiene como ideal moral hacer el bien.</p>
+        <footer class="blockquote-footer">Dr. José Gregorio Hernández</footer>
+      </blockquote>
+    </div>
+  </div>
+
+      <!-- ---------- Productos ---------- -->
+  <section class="row secTam bg-light" id="productos1">
+    <div class="container">
+      <h2>Productos</h2>
+
+
+    </div>
+  </section><!--  Productos -->
+
+      <!-- ---------- Quienes Somos ---------- -->
+  <section class="row secTam bg-info text-white" id="somos">
+    <div class="container">
+    <h2>Quienes Somos</h2>
+        <p>En Importadora Dr. José Gregorio Hernández conocemos la importancia que tiene el cuidado de aquellos a quienes más queremos, por lo que hoy te ofrecemos los mejores servicios en equipos médicos de alta calidad y alto rendimiento, para hacer de tu vida mucho más fácil.</p>
+    </div>
+  </section><!--  Quienes Somos -->
+
+      <!-- ---------- Donde contactarnos ---------- -->
+  <section class="row secTam bg-secondary text-white" id="contactos">
+        <div class="container">
+        <h2>Contactanos:</h2>
+
+
+        <p>Si deseas adquirir alguno de nuestros productos o preguntar por alguno en especial, escríbenos por nuestros canalres de contacto</p>
+
+        <h3>Correo:</h3>
+        <p>importadora.drjosegregorio@gmail.com</p>
+        
+        <h3>Numero:</h3>
+        <p>591 697 611 17</p>
+
+        <p>Tambien estamos atentos a nuestras Redes Sociales:</p>
+
+        </div>
+
+  </section>
+
+  <div class="clearfix"></div> <!-- eliminar flotantes -->
+
+
+    <!-- ---------- footer ---------- -->
+  <footer class="row py-3 bg-dark justify-content-center text-white">
+    <p class="h4">2020 &copy; Jose Soto</p>
+  </footer>
+
+
+  </div> <!-- container-fluid -->
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 4000,
+      offset:60
+    });
+  </script>
+  <!-- comentemos los de la web
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+   -->
 
-    <!-- comentemos los de la web
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-     -->
-
-  </body>
+</body>
 </html>
